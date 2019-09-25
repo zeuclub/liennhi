@@ -327,11 +327,22 @@ body {
 	top:1px;
 }
 .doiqua{
-  border:1px solid #dcdcdc;
-  border-bottom-left-radius:6px;
   color: red;
-  -moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
   font-size:14px;
+  text-decoration: none;
+  border-top-left-radius:5px;
+  border-top-right-radius:5px;
+  border-bottom-right-radius:5px;
+  border-bottom-left-radius:5px;
+  text-indent:0;
+  border:1px solid #dcdcdc;
+  display:inline-block;
+  font-size:15px;
+  height:19px;
+  line-height:17px;
+  width:40px;
+  text-align:center;
+  text-shadow:1px 1px 0px #ffffff;
 
 }
 
