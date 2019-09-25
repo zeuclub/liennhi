@@ -337,12 +337,14 @@ body {
   border-bottom-left-radius:5px;
   text-indent:0;
   border:1px solid #dcdcdc;
-  
   font-size:15px;
   height:19px;
   line-height:17px;
   width:40px;
   text-align:center;
   text-shadow:1px 1px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+  /*background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf) );*/
+  background-color:#dfdfdf;
 }
 
