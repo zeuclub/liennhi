@@ -59,9 +59,54 @@
       else
         stage.style.webkitTransform = '';
     }
+     var num;
+        var temp=0;
+        var speed=5000; /* this is set for 5 seconds, edit value to suit requirements */
+        var preloads=[];
+        /* add any number of images here */
+        preload(
+        'meo1.jpg',
+        'meo2.jpg',
+        'meo3.jpg',
+        'meo4.jpg',
+        'https://4.bp.blogspot.com/-yYAY4NwjsPY/UztzZXuF56I/AAAAAAAAOCU/jNq7JSCJMj0/s0/3.jpg',
+        'https://1.bp.blogspot.com/-TBGqka33pt8/UzsBjJau3BI/AAAAAAAAOBM/-GOF_49AEis/s0/YouTube-Logo-Widescreen-Wallpaper.jpg',
+        'https://3.bp.blogspot.com/-oVYf6cyPJQ0/Uzty2W6T0_I/AAAAAAAAOCE/4tg8Cug3AqM/s0/2.jpg',
+        'https://2.bp.blogspot.com/-p_oge-gkZ1Q/UztzJKaAklI/AAAAAAAAOCM/05y2C7t1Zn0/s0/1.jpg',
+        );
+        function preload(){
+        for(var c=0;c<arguments.length;c++) {
+        preloads[preloads.length]=new Image();
+        preloads[preloads.length-1].src=arguments[c];
+        }
+        }
+        function rotateImages() {
+        num=Math.floor(Math.random()*preloads.length);
+        if(num==temp){
+        rotateImages();
+        }
+        else{
+        document.body.style.backgroundImage='url('+preloads[num].src+')';
+        temp=num;
+        setTimeout(function(){rotateImages()},speed);
+        }
+        }
+        if(window.addEventListener){
+        window.addEventListener('load',function(){setTimeout(function(){rotateImages()},speed)},false);
+        }
+        else {
+        if(window.attachEvent){
+        window.attachEvent('onload',function(){setTimeout(function(){rotateImages()},speed)});
+        }
+}
   </script>
 </head>
 <body>
+   <body style="
+    background:url(meo1.jpg)
+  no-repeat center center;-webkit-transition: all 1.0s ease;-moz-transition: all 1.0s ease;transition: all 1.0s ease;
+    background-size: 100% 100%;
+">
 <div style="text-align: center;padding: 0.1px;"><a href="https://manhkhac.github.io/crush" class="doiqua" "onclick="toggleShape()">💕L♡M💕</a></div>
   <div style="text-align: right;padding: 15px;"><a href="#" class="classname" onclick="toggleShape()">Đổi kiểu</a></div>
    
