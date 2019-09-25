@@ -1,7 +1,7 @@
 
 /**
- * Quyết Nguyễn (Quyetdaik)
- * https://fb.com/nhquyet
+ * Mạnh Nguyễn (Manhdaik)
+ * https://fb.com/manhklove1
  */
 
 
@@ -327,22 +327,22 @@ body {
 	top:1px;
 }
 .doiqua{
+	text-decoration: none;
+	display:inline-block;
   color: red;
   font-size:14px;
-  text-decoration: none;
   border-top-left-radius:5px;
   border-top-right-radius:5px;
   border-bottom-right-radius:5px;
   border-bottom-left-radius:5px;
   text-indent:0;
   border:1px solid #dcdcdc;
-  display:inline-block;
+  
   font-size:15px;
   height:19px;
   line-height:17px;
   width:40px;
   text-align:center;
   text-shadow:1px 1px 0px #ffffff;
-
 }
 
